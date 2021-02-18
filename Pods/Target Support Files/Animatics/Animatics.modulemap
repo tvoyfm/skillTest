@@ -1,6 +1,0 @@
-module Animatics {
-  umbrella header "Animatics-umbrella.h"
-
-  export *
-  module * { export * }
-}
