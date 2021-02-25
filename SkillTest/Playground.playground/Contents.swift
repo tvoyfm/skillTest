@@ -80,8 +80,63 @@ func + <T: CustomStringConvertible, U: CustomStringConvertible> (left: T, right:
 var jj = 5 + " string"
 
 // 6. Напишите для библиотеки анимаций новый аниматор:
+protocol Animator {
+    associatedtype Target
+    associatedtype Value
+    
+    init(_ value: Value)
+    
+    func animate(target: Target)
+}
+
+infix operator ~>>
+func ~>> <T: Animator> (left: T, right: T.Target) {
+    left.animate(target: right)
+}
+
 //     a) изменяющий фоновый цвет для UIView;
-
+class BackgroundColorAnimator: Animator {
+    let newValue: UIColor
+    
+    required init(_ value: UIColor) {
+        newValue = value
+    }
+    
+    func animate(target: UIView) {
+        UIView.animate(withDuration: 0.3) {
+            target.backgroundColor = self.newValue
+        }
+    }
+}
 //     b) изменяющий center UIView;
-
+class ChangeCenterAnimator: Animator {
+    let newValue: CGPoint
+    
+    required init(_ value: CGPoint) {
+        newValue = value
+    }
+    
+    func animate(target: UIView) {
+        UIView.animate(withDuration: 0.3) {
+            target.center = self.newValue
+        }
+    }
+}
 //     c) делающий scale-трансформацию для UIView.
+class ScaleViewAnimator: Animator {
+    let newValue: CGFloat
+    
+    required init(_ value: CGFloat) {
+        newValue = value
+    }
+    
+    func animate(target: UIView) {
+        UIView.animate(withDuration: 0.3) {
+           target.transform = CGAffineTransform(scaleX: self.newValue, y: self.newValue)        }
+    }
+}
+
+let view = UIView()
+BackgroundColorAnimator(UIColor.red) ~>> view
+ChangeCenterAnimator(CGPoint(x: 6, y: 6)) ~>> view
+ScaleViewAnimator(CGFloat(2)) ~>> view
