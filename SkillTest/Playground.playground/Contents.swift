@@ -7,21 +7,21 @@ import UIKit
 // 3. Создайте функцию, которая:
 //     a) получает на вход два Equatable-объекта и, в зависимости от того, равны ли они друг другу, выводит разные сообщения в лог;
 func check<T: Equatable>(_ a: T, _ b: T) {
-    if a == b { print("Объекты равны") } else { print("Объекты не равны") }
+    a == b ? print("Объекты равны") : print("Объекты не равны")
 }
 //     b) получает на вход два сравниваемых (Comparable) друг с другом значения, сравнивает их и выводит в лог наибольшее;
 func isBigger<T: Comparable>(_ a: T, _ b: T) {
-    if a > b { print(a) } else { print(b) }
+    a > b ? print(a) : print(b)
 }
 //     c) получает на вход два сравниваемых (Comparable) друг с другом значения, сравнивает их и перезаписывает первый входной параметр меньшим из двух значений, а второй параметр — большим;
 func isBiggerWithRecord<T: Comparable>(_ first: inout T, _ second: inout T) {
-    if first > second { let temp = first ; first = second ; second = temp }
+    if first > second { swap(&first, &second) }
 }
 //     d) получает на вход две функции, которые имеют дженерик — входной параметр Т и ничего не возвращают; сама функция должна вернуть новую функцию, которая на вход получает параметр с типом Т и при своём вызове вызывает две функции и передаёт в них полученное значение (по факту объединяет две функции).
 func twoFunc<T>(a: @escaping (T) -> Void, b: @escaping (T) -> Void) -> ((_ obj: T) -> Void) {
-    return { t in
-        a(t)
-        b(t)
+    return {
+        a($0)
+        b($0)
     }
 }
 
@@ -29,13 +29,10 @@ func twoFunc<T>(a: @escaping (T) -> Void, b: @escaping (T) -> Void) -> ((_ obj: 
 //     a) Array, у которого элементы имеют тип Comparable, и добавьте генерируемое свойство, которое возвращает максимальный элемент;
 extension Array where Element: Comparable {
     var maximum: Element? {
-        if count > 0 {
+        guard !isEmpty else { return nil }
             var maxElement = first!
             forEach { value in if value > maxElement { maxElement = value } }
             return maxElement
-        } else {
-            return nil
-        }
     }
 }
 
@@ -45,7 +42,7 @@ ar.maximum
 extension Array where Element: Equatable {
     mutating func deleteIdentity() -> [Element] {
         var result = [Element]()
-        forEach { value in if result.contains(value) == false { result.append(value) } }
+        forEach { value in if !result.contains(value) { result.append(value) } }
         return result
     }
 }
@@ -54,22 +51,19 @@ ar.deleteIdentity()
 // 5. Создайте специальный оператор для:
 //     a) возведения Int-числа в степень: оператор ^^, работает 2^3, возвращает 8;
 infix operator ^^
-func ^^(left: Int, right: Int) -> Int {
-    var result = left
-    for _ in 2...right { result *= left }
-    return result
+func ^^(left: Int, right: Int) -> Double {
+    return pow(Double(left), Double(right))
 }
 var a = 2
-var b = 8
+var b = -9
 
 a^^b
 
 
 //     b) копирования во второе Int-числа удвоенного значения первого 4 ~> a, после этого a = 8;
 infix operator ~>
-func ~> (left: Int, right: inout Int) -> Int {
+func ~> (left: Int, right: inout Int) {
     right = left*2
-    return right
 }
 
 99 ~> a

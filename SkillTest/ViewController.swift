@@ -10,7 +10,7 @@ import Animatics
 
 // ф-я присваивания в экземпляр tableView делегата: myController <* tableView, поле этого myController становится делегатом для tableView;
 infix operator <*
-func <* <U: UIViewController> (left: UITableView, right: U) where U: UITableViewDelegate {
+func <* (left: UITableView, right: UITableViewDelegate) {
     left.delegate = right
 }
 
