@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02299FB4B35D6D91D16DF4A985D32655 /* ViewFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8E1FD0F6054EF8958E770435EC635 /* ViewFilters.swift */; };
+		0F252974263EDCAEB549C38CF7451976 /* Animatics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDBC249A2A1A677C0D1636A5C68F4F19 /* Animatics-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2069A18D19980B8A65B0A0609DDCB5CF /* Pods-SkillTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2C8B10C7865F3277D0CD8DD1192A45 /* Pods-SkillTest-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3D5E173F19F2F3D03AE1598FDC1CF02A /* AnimationPerformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B67B7BA93AC8B2B898C885FAEDBFC /* AnimationPerformers.swift */; };
+		53A1A4C5289D383C4ED2B150C961DB1F /* AnimaticsSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DE216D2920AB94AC47BACD3BF7078 /* AnimaticsSettings.swift */; };
+		5D52A951356A37990290EF3F508A61C6 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB598451654C724CB027B32631FEBDE7 /* Filters.swift */; };
+		7CFC6E7179ED7E7AD0B79DA4FAC590C4 /* ShapeLayerAnimatics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8EA9ADE3F27D01B550B35737A5F253 /* ShapeLayerAnimatics.swift */; };
+		8828E47DE1E45C1BB732B4AF68514B32 /* MainRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AF13C69B10B40BB56704E73976F33D /* MainRecipes.swift */; };
+		88A5F70DF9949A94670E9CCA5B7A0DBC /* ColorAnimatics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E676B8C9340BC5E5E869184B341B277 /* ColorAnimatics.swift */; };
+		8C565217FE2C0AC4D9798C6774C05F72 /* ConstraintAnimatics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAA9AD16B04247991B5EA5BD5DCA268 /* ConstraintAnimatics.swift */; };
+		8DA1AA8018047F3DBF2A1B2E476C2E81 /* ViewBaseAnimatics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B1B0E81ACBEF2B7509782FBBB4376B /* ViewBaseAnimatics.swift */; };
+		9336C31E7FD95686C50D3EED21123066 /* FilterAnimators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4304CD530C3DAC0786DED53E0CACCF3 /* FilterAnimators.swift */; };
+		96EB1BA163CE1E6304D2E114CD2E60C2 /* TransformAnimatics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FC6C8EDDEC60DED4C4A65843DE6063 /* TransformAnimatics.swift */; };
+		A205A212887D162FD5A923DA33DCE5A4 /* Animatics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A38A15427777CFF9A36A4B43173329AB /* Animatics-dummy.m */; };
+		D4E34396BA1F84A40513A09A93161FF4 /* ImageViewAnimatics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4457E59A1ECC71C865CADE1F3B5581 /* ImageViewAnimatics.swift */; };
+		D73C886E6F2662D69B4BD0F6BEC231FF /* AnimaticsContainers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39E1559C41E7786F78F098E236E3A5 /* AnimaticsContainers.swift */; };
+		F41DC9B97D74E4807BB4B3CADF17E204 /* LayerAnimatics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B64FAB6EB72ECD4AEB7354348F92D /* LayerAnimatics.swift */; };
+		F4964777CC295533C791AD201F4E1DBF /* Pods-SkillTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF0566BC4FDFF8F2B4E4D47B86458D8 /* Pods-SkillTest-dummy.m */; };
+		FEEFF4D4F234D801E6DE0F0E122A4C16 /* AnimaticsFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C3FFC04DC7B62864DCA94CFE0721D6 /* AnimaticsFoundation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F825DB19ABB5D6A4BA74922175F3DA45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76CBC4B683327D7E5AAE236F614AFDB6;
+			remoteInfo = Animatics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01C3FFC04DC7B62864DCA94CFE0721D6 /* AnimaticsFoundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimaticsFoundation.swift; path = Animatics/Classes/Foundation/AnimaticsFoundation.swift; sourceTree = "<group>"; };
+		0EE8E1FD0F6054EF8958E770435EC635 /* ViewFilters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewFilters.swift; path = Animatics/Classes/V2/ViewFilters.swift; sourceTree = "<group>"; };
+		1015618C75AD2AB5ABFC710C577D6D30 /* libPods-SkillTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SkillTest.a"; path = "libPods-SkillTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17591583ABF8A2A3464E6E10D0B1116D /* Animatics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Animatics.debug.xcconfig; sourceTree = "<group>"; };
+		21B1B0E81ACBEF2B7509782FBBB4376B /* ViewBaseAnimatics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewBaseAnimatics.swift; path = Animatics/Classes/Animators/ViewBaseAnimatics.swift; sourceTree = "<group>"; };
+		2CF0566BC4FDFF8F2B4E4D47B86458D8 /* Pods-SkillTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SkillTest-dummy.m"; sourceTree = "<group>"; };
+		2F2C8B10C7865F3277D0CD8DD1192A45 /* Pods-SkillTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SkillTest-umbrella.h"; sourceTree = "<group>"; };
+		2FAA19C4B2977CFC6F29BDF6A7F02B94 /* libAnimatics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAnimatics.a; path = libAnimatics.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		39200B17E6565CCC89790BF9C88789DA /* Animatics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Animatics-prefix.pch"; sourceTree = "<group>"; };
+		4B0B64FAB6EB72ECD4AEB7354348F92D /* LayerAnimatics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayerAnimatics.swift; path = Animatics/Classes/Animators/LayerAnimatics.swift; sourceTree = "<group>"; };
+		5D4457E59A1ECC71C865CADE1F3B5581 /* ImageViewAnimatics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageViewAnimatics.swift; path = Animatics/Classes/Animators/ImageViewAnimatics.swift; sourceTree = "<group>"; };
+		5DAA9AD16B04247991B5EA5BD5DCA268 /* ConstraintAnimatics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAnimatics.swift; path = Animatics/Classes/Animators/ConstraintAnimatics.swift; sourceTree = "<group>"; };
+		69248D5CC453A7B7EFEAE0010C0FD7AC /* Pods-SkillTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SkillTest.release.xcconfig"; sourceTree = "<group>"; };
+		694B67B7BA93AC8B2B898C885FAEDBFC /* AnimationPerformers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationPerformers.swift; path = Animatics/Classes/Foundation/AnimationPerformers.swift; sourceTree = "<group>"; };
+		8E676B8C9340BC5E5E869184B341B277 /* ColorAnimatics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorAnimatics.swift; path = Animatics/Classes/Animators/ColorAnimatics.swift; sourceTree = "<group>"; };
+		91130BB4485C65E3AB5AB3768D5F6274 /* Pods-SkillTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SkillTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A38A15427777CFF9A36A4B43173329AB /* Animatics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Animatics-dummy.m"; sourceTree = "<group>"; };
+		A4304CD530C3DAC0786DED53E0CACCF3 /* FilterAnimators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterAnimators.swift; path = Animatics/Classes/Animators/FilterAnimators.swift; sourceTree = "<group>"; };
+		B5693258FC337B21870340C6C54DD988 /* Pods-SkillTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SkillTest-acknowledgements.plist"; sourceTree = "<group>"; };
+		B9AF13C69B10B40BB56704E73976F33D /* MainRecipes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MainRecipes.swift; path = Animatics/Classes/Recipes/MainRecipes.swift; sourceTree = "<group>"; };
+		BC28FCCD0A49F00D683FB6B04395FB4D /* Animatics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Animatics.release.xcconfig; sourceTree = "<group>"; };
+		CA8EA9ADE3F27D01B550B35737A5F253 /* ShapeLayerAnimatics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeLayerAnimatics.swift; path = Animatics/Classes/Animators/ShapeLayerAnimatics.swift; sourceTree = "<group>"; };
+		CB598451654C724CB027B32631FEBDE7 /* Filters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filters.swift; path = Animatics/Classes/Animators/Filters.swift; sourceTree = "<group>"; };
+		D5FC6C8EDDEC60DED4C4A65843DE6063 /* TransformAnimatics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformAnimatics.swift; path = Animatics/Classes/Animators/TransformAnimatics.swift; sourceTree = "<group>"; };
+		E40AE498F5B730D164907880F80B5757 /* Animatics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Animatics.modulemap; sourceTree = "<group>"; };
+		E7708C66B0FE484650E94F1AD8BF2389 /* Pods-SkillTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SkillTest.modulemap"; sourceTree = "<group>"; };
+		E86DE216D2920AB94AC47BACD3BF7078 /* AnimaticsSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimaticsSettings.swift; path = Animatics/Classes/Foundation/AnimaticsSettings.swift; sourceTree = "<group>"; };
+		EE39E1559C41E7786F78F098E236E3A5 /* AnimaticsContainers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimaticsContainers.swift; path = Animatics/Classes/Foundation/AnimaticsContainers.swift; sourceTree = "<group>"; };
+		F3A04E8751C85E38117BA2590D9F326D /* Pods-SkillTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SkillTest-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FDBC249A2A1A677C0D1636A5C68F4F19 /* Animatics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Animatics-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58AAC523CB5B5A3D03FDABD26F9CB851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AAB5125F28F85549460FD5AA1C30468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AAF2351F8BA23FD94C6F8477E8DC6D9 /* Pods-SkillTest */ = {
+			isa = PBXGroup;
+			children = (
+				E7708C66B0FE484650E94F1AD8BF2389 /* Pods-SkillTest.modulemap */,
+				F3A04E8751C85E38117BA2590D9F326D /* Pods-SkillTest-acknowledgements.markdown */,
+				B5693258FC337B21870340C6C54DD988 /* Pods-SkillTest-acknowledgements.plist */,
+				2CF0566BC4FDFF8F2B4E4D47B86458D8 /* Pods-SkillTest-dummy.m */,
+				2F2C8B10C7865F3277D0CD8DD1192A45 /* Pods-SkillTest-umbrella.h */,
+				91130BB4485C65E3AB5AB3768D5F6274 /* Pods-SkillTest.debug.xcconfig */,
+				69248D5CC453A7B7EFEAE0010C0FD7AC /* Pods-SkillTest.release.xcconfig */,
+			);
+			name = "Pods-SkillTest";
+			path = "Target Support Files/Pods-SkillTest";
+			sourceTree = "<group>";
+		};
+		24A7576541C2FB9DD85CFC5BCCF96C2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FAA19C4B2977CFC6F29BDF6A7F02B94 /* libAnimatics.a */,
+				1015618C75AD2AB5ABFC710C577D6D30 /* libPods-SkillTest.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		438AD699269D3B2E21056AC6951E78D6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AAF2351F8BA23FD94C6F8477E8DC6D9 /* Pods-SkillTest */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		539CFEE0262FDA3E56CD78AEB8AACE9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B432B82E23622B5893273DCF8FC3D01C /* Animatics */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B432B82E23622B5893273DCF8FC3D01C /* Animatics */ = {
+			isa = PBXGroup;
+			children = (
+				EE39E1559C41E7786F78F098E236E3A5 /* AnimaticsContainers.swift */,
+				01C3FFC04DC7B62864DCA94CFE0721D6 /* AnimaticsFoundation.swift */,
+				E86DE216D2920AB94AC47BACD3BF7078 /* AnimaticsSettings.swift */,
+				694B67B7BA93AC8B2B898C885FAEDBFC /* AnimationPerformers.swift */,
+				8E676B8C9340BC5E5E869184B341B277 /* ColorAnimatics.swift */,
+				5DAA9AD16B04247991B5EA5BD5DCA268 /* ConstraintAnimatics.swift */,
+				A4304CD530C3DAC0786DED53E0CACCF3 /* FilterAnimators.swift */,
+				CB598451654C724CB027B32631FEBDE7 /* Filters.swift */,
+				5D4457E59A1ECC71C865CADE1F3B5581 /* ImageViewAnimatics.swift */,
+				4B0B64FAB6EB72ECD4AEB7354348F92D /* LayerAnimatics.swift */,
+				B9AF13C69B10B40BB56704E73976F33D /* MainRecipes.swift */,
+				CA8EA9ADE3F27D01B550B35737A5F253 /* ShapeLayerAnimatics.swift */,
+				D5FC6C8EDDEC60DED4C4A65843DE6063 /* TransformAnimatics.swift */,
+				21B1B0E81ACBEF2B7509782FBBB4376B /* ViewBaseAnimatics.swift */,
+				0EE8E1FD0F6054EF8958E770435EC635 /* ViewFilters.swift */,
+				BFABF3D8032A26CE864B8C41526CA804 /* Support Files */,
+			);
+			name = Animatics;
+			path = Animatics;
+			sourceTree = "<group>";
+		};
+		BFABF3D8032A26CE864B8C41526CA804 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E40AE498F5B730D164907880F80B5757 /* Animatics.modulemap */,
+				A38A15427777CFF9A36A4B43173329AB /* Animatics-dummy.m */,
+				39200B17E6565CCC89790BF9C88789DA /* Animatics-prefix.pch */,
+				FDBC249A2A1A677C0D1636A5C68F4F19 /* Animatics-umbrella.h */,
+				17591583ABF8A2A3464E6E10D0B1116D /* Animatics.debug.xcconfig */,
+				BC28FCCD0A49F00D683FB6B04395FB4D /* Animatics.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Animatics";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				539CFEE0262FDA3E56CD78AEB8AACE9A /* Pods */,
+				24A7576541C2FB9DD85CFC5BCCF96C2E /* Products */,
+				438AD699269D3B2E21056AC6951E78D6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6D503EBB05E7CCA792ACD9C02462EEFA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F252974263EDCAEB549C38CF7451976 /* Animatics-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9231A05EB5A03295C1E079D492780F9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2069A18D19980B8A65B0A0609DDCB5CF /* Pods-SkillTest-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		76CBC4B683327D7E5AAE236F614AFDB6 /* Animatics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9388A7BEDF4C4D4FCFE6A82C19E88468 /* Build configuration list for PBXNativeTarget "Animatics" */;
+			buildPhases = (
+				6D503EBB05E7CCA792ACD9C02462EEFA /* Headers */,
+				E9DA20EAB0042D14A4D831BB73D63A2E /* Sources */,
+				9AAB5125F28F85549460FD5AA1C30468 /* Frameworks */,
+				9A575419D7AA2E422EE9F8E7C22CB0F1 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Animatics;
+			productName = Animatics;
+			productReference = 2FAA19C4B2977CFC6F29BDF6A7F02B94 /* libAnimatics.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F571F582D2EB589BC12D92457859E0E8 /* Pods-SkillTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B29E2C3D78282C3D5EC8BBC8DFFE90A3 /* Build configuration list for PBXNativeTarget "Pods-SkillTest" */;
+			buildPhases = (
+				9231A05EB5A03295C1E079D492780F9F /* Headers */,
+				22A400330BB4D6037A108E8CE9D83179 /* Sources */,
+				58AAC523CB5B5A3D03FDABD26F9CB851 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48CBB4A81158F53C890DB1EEB945DC64 /* PBXTargetDependency */,
+			);
+			name = "Pods-SkillTest";
+			productName = "Pods-SkillTest";
+			productReference = 1015618C75AD2AB5ABFC710C577D6D30 /* libPods-SkillTest.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 24A7576541C2FB9DD85CFC5BCCF96C2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76CBC4B683327D7E5AAE236F614AFDB6 /* Animatics */,
+				F571F582D2EB589BC12D92457859E0E8 /* Pods-SkillTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A575419D7AA2E422EE9F8E7C22CB0F1 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/Animatics/Animatics.modulemap",
+				"${PODS_ROOT}/Headers/Public/Animatics/Animatics-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/Animatics-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Animatics/Animatics.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Animatics/Animatics-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22A400330BB4D6037A108E8CE9D83179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4964777CC295533C791AD201F4E1DBF /* Pods-SkillTest-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9DA20EAB0042D14A4D831BB73D63A2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A205A212887D162FD5A923DA33DCE5A4 /* Animatics-dummy.m in Sources */,
+				D73C886E6F2662D69B4BD0F6BEC231FF /* AnimaticsContainers.swift in Sources */,
+				FEEFF4D4F234D801E6DE0F0E122A4C16 /* AnimaticsFoundation.swift in Sources */,
+				53A1A4C5289D383C4ED2B150C961DB1F /* AnimaticsSettings.swift in Sources */,
+				3D5E173F19F2F3D03AE1598FDC1CF02A /* AnimationPerformers.swift in Sources */,
+				88A5F70DF9949A94670E9CCA5B7A0DBC /* ColorAnimatics.swift in Sources */,
+				8C565217FE2C0AC4D9798C6774C05F72 /* ConstraintAnimatics.swift in Sources */,
+				9336C31E7FD95686C50D3EED21123066 /* FilterAnimators.swift in Sources */,
+				5D52A951356A37990290EF3F508A61C6 /* Filters.swift in Sources */,
+				D4E34396BA1F84A40513A09A93161FF4 /* ImageViewAnimatics.swift in Sources */,
+				F41DC9B97D74E4807BB4B3CADF17E204 /* LayerAnimatics.swift in Sources */,
+				8828E47DE1E45C1BB732B4AF68514B32 /* MainRecipes.swift in Sources */,
+				7CFC6E7179ED7E7AD0B79DA4FAC590C4 /* ShapeLayerAnimatics.swift in Sources */,
+				96EB1BA163CE1E6304D2E114CD2E60C2 /* TransformAnimatics.swift in Sources */,
+				8DA1AA8018047F3DBF2A1B2E476C2E81 /* ViewBaseAnimatics.swift in Sources */,
+				02299FB4B35D6D91D16DF4A985D32655 /* ViewFilters.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48CBB4A81158F53C890DB1EEB945DC64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Animatics;
+			target = 76CBC4B683327D7E5AAE236F614AFDB6 /* Animatics */;
+			targetProxy = F825DB19ABB5D6A4BA74922175F3DA45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		072CF24DD597B28B1EC6485A97C6DC75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		94CA9DF48CE575FECE47DDD8786D50E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E9C505FE718042D7CD3E0B08AB490C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC28FCCD0A49F00D683FB6B04395FB4D /* Animatics.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Animatics/Animatics-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/Animatics/Animatics.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Animatics;
+				PRODUCT_NAME = Animatics;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0282CA1251C52222A5DF50CB877F2FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91130BB4485C65E3AB5AB3768D5F6274 /* Pods-SkillTest.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SkillTest/Pods-SkillTest.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1DD41F39FC554C1D98D5613DC0F58B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69248D5CC453A7B7EFEAE0010C0FD7AC /* Pods-SkillTest.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SkillTest/Pods-SkillTest.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC9DCF328B1950A64CF48EE612AE0C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17591583ABF8A2A3464E6E10D0B1116D /* Animatics.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Animatics/Animatics-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/Animatics/Animatics.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Animatics;
+				PRODUCT_NAME = Animatics;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94CA9DF48CE575FECE47DDD8786D50E7 /* Debug */,
+				072CF24DD597B28B1EC6485A97C6DC75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9388A7BEDF4C4D4FCFE6A82C19E88468 /* Build configuration list for PBXNativeTarget "Animatics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC9DCF328B1950A64CF48EE612AE0C9F /* Debug */,
+				9E9C505FE718042D7CD3E0B08AB490C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B29E2C3D78282C3D5EC8BBC8DFFE90A3 /* Build configuration list for PBXNativeTarget "Pods-SkillTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0282CA1251C52222A5DF50CB877F2FD /* Debug */,
+				E1DD41F39FC554C1D98D5613DC0F58B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
