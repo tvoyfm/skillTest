@@ -13,6 +13,7 @@
 		017AF6D724B8C95F00612CD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017AF6D524B8C95F00612CD6 /* Main.storyboard */; };
 		017AF6D924B8C95F00612CD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017AF6D824B8C95F00612CD6 /* Assets.xcassets */; };
 		017AF6DC24B8C95F00612CD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017AF6DA24B8C95F00612CD6 /* LaunchScreen.storyboard */; };
+		CD6C934E25ED09BE009DD0F4 /* Task2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C934D25ED09BE009DD0F4 /* Task2.swift */; };
 		CDD569FB25EC36E6003D4B39 /* Task1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD569FA25EC36E6003D4B39 /* Task1.swift */; };
 		F3A168CE134FE33BF5B5CD75 /* Pods_SkillTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE3FEDF175C96A57A4CAD75 /* Pods_SkillTest.framework */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,7 @@
 		017AF6DB24B8C95F00612CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		017AF6DD24B8C95F00612CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		727193DF41FC3B07778AAF32 /* Pods-SkillTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillTest.debug.xcconfig"; path = "Target Support Files/Pods-SkillTest/Pods-SkillTest.debug.xcconfig"; sourceTree = "<group>"; };
+		CD6C934D25ED09BE009DD0F4 /* Task2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task2.swift; sourceTree = "<group>"; };
 		CDD569FA25EC36E6003D4B39 /* Task1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task1.swift; sourceTree = "<group>"; };
 		EA9FDE5C277AA0FC6E717DCB /* Pods-SkillTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillTest.release.xcconfig"; path = "Target Support Files/Pods-SkillTest/Pods-SkillTest.release.xcconfig"; sourceTree = "<group>"; };
 		FEE3FEDF175C96A57A4CAD75 /* Pods_SkillTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkillTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				CDD569FA25EC36E6003D4B39 /* Task1.swift */,
+				CD6C934D25ED09BE009DD0F4 /* Task2.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6C934E25ED09BE009DD0F4 /* Task2.swift in Sources */,
 				017AF6D424B8C95F00612CD6 /* ViewController.swift in Sources */,
 				017AF6D024B8C95F00612CD6 /* AppDelegate.swift in Sources */,
 				CDD569FB25EC36E6003D4B39 /* Task1.swift in Sources */,
