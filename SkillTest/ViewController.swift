@@ -20,6 +20,7 @@ class ViewController: UIViewController {
 // MARK:  VC's
     let task1   = Task1()
     let task2   = Task2()
+    let task3   = Task3()
     
 // MARK: - Config view
     func setupView() {
@@ -60,7 +61,7 @@ class ViewController: UIViewController {
             switch segm.selectedSegmentIndex {
             case 0: present(task1, animated: true, completion: nil)
             case 1: present(task2, animated: true, completion: nil)
-            case 2: break
+            case 2: present(task3, animated: true, completion: nil)
             case 3: break
             case 4: break
             default: break
