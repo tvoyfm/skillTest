@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     let task1   = Task1()
     let task2   = Task2()
     let task3   = Task3()
+    let task4   = Task4()
+    let task5   = Task5()
     
 // MARK: - Config view
     func setupView() {
@@ -62,8 +64,8 @@ class ViewController: UIViewController {
             case 0: present(task1, animated: true, completion: nil)
             case 1: present(task2, animated: true, completion: nil)
             case 2: present(task3, animated: true, completion: nil)
-            case 3: break
-            case 4: break
+            case 3: present(task4, animated: true, completion: nil)
+            case 4: present(task5, animated: true, completion: nil)
             default: break
         }
     }

@@ -13,6 +13,8 @@
 		017AF6D724B8C95F00612CD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017AF6D524B8C95F00612CD6 /* Main.storyboard */; };
 		017AF6D924B8C95F00612CD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017AF6D824B8C95F00612CD6 /* Assets.xcassets */; };
 		017AF6DC24B8C95F00612CD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017AF6DA24B8C95F00612CD6 /* LaunchScreen.storyboard */; };
+		CD075DD025F014B000494544 /* Task4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD075DCF25F014B000494544 /* Task4.swift */; };
+		CD075DD225F01EF500494544 /* Task5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD075DD125F01EF500494544 /* Task5.swift */; };
 		CD0C6F8325EE9F04003EF19D /* Task3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C6F8225EE9F04003EF19D /* Task3.swift */; };
 		CD0C6F8825EEA678003EF19D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C6F8725EEA678003EF19D /* TableViewCell.swift */; };
 		CD6C934E25ED09BE009DD0F4 /* Task2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C934D25ED09BE009DD0F4 /* Task2.swift */; };
@@ -30,6 +32,8 @@
 		017AF6DB24B8C95F00612CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		017AF6DD24B8C95F00612CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		727193DF41FC3B07778AAF32 /* Pods-SkillTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillTest.debug.xcconfig"; path = "Target Support Files/Pods-SkillTest/Pods-SkillTest.debug.xcconfig"; sourceTree = "<group>"; };
+		CD075DCF25F014B000494544 /* Task4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task4.swift; sourceTree = "<group>"; };
+		CD075DD125F01EF500494544 /* Task5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task5.swift; sourceTree = "<group>"; };
 		CD0C6F8225EE9F04003EF19D /* Task3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task3.swift; sourceTree = "<group>"; };
 		CD0C6F8725EEA678003EF19D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		CD6C934D25ED09BE009DD0F4 /* Task2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task2.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				CDD569FA25EC36E6003D4B39 /* Task1.swift */,
 				CD6C934D25ED09BE009DD0F4 /* Task2.swift */,
 				CD0C6F8225EE9F04003EF19D /* Task3.swift */,
+				CD075DCF25F014B000494544 /* Task4.swift */,
+				CD075DD125F01EF500494544 /* Task5.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -239,6 +245,8 @@
 				017AF6D424B8C95F00612CD6 /* ViewController.swift in Sources */,
 				017AF6D024B8C95F00612CD6 /* AppDelegate.swift in Sources */,
 				CDD569FB25EC36E6003D4B39 /* Task1.swift in Sources */,
+				CD075DD025F014B000494544 /* Task4.swift in Sources */,
+				CD075DD225F01EF500494544 /* Task5.swift in Sources */,
 				CD0C6F8825EEA678003EF19D /* TableViewCell.swift in Sources */,
 				017AF6D224B8C95F00612CD6 /* SceneDelegate.swift in Sources */,
 			);
