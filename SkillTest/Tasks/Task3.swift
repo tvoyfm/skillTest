@@ -16,6 +16,10 @@ class Task3: UIViewController {
     let padding          = CGFloat(15)
     let objHeight        = CGFloat(30)
     let cornerRadius     = CGFloat(5)
+    let namesForRandom   = ["Sasha","Petya","Gleb","Nikita","Kostya",
+                            "Olya","Katya","Alina","Polina","Jack",
+                            "Kim","Kolya","Timur","Ron","Qard",
+                            "Olesya","Nina","Foma","Ermak","Inga"]
     
 // MARK: - Objects
     var table           = UITableView()
@@ -23,25 +27,28 @@ class Task3: UIViewController {
     
     let addButton       = UIButton(type: .system)
     let delButton       = UIButton(type: .system)
+    
+    let searchField     = UITextField()
 
     // RX
-    var namesForRandom = ["Sasha","Petya","Gleb","Nikita","Kostya",
-                          "Olya","Katya","Alina","Polina","Jack",
-                          "Kim","Kolya","Timur","Ron","Qard",
-                          "Olesya","Nina","Foma","Ermak","Inga"]
-    var names = BehaviorRelay(value: [""])
-    let disposeBag = DisposeBag()
+    var names           = BehaviorRelay(value: [""])
+    var namesForShow    = BehaviorRelay(value: [""])
+    let disposeBag      = DisposeBag()
     
 // MARK: - Config view
     func setupView() {
         view.backgroundColor = .systemBackground
         
         names.accept(namesForRandom)
+        names
+            .bind(to: namesForShow)
+            .disposed(by: disposeBag)
         
         updateConstraints()
         configTableView()
         configAddButton()
         configDelButton()
+        configSearchField()
     }
     
 // MARK: Config objects
@@ -49,7 +56,7 @@ class Task3: UIViewController {
     func configTableView() {
         table.register(TableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         
-        names
+        namesForShow
             .bind(to: table.rx.items) {
               (tableView: UITableView, index: Int, element: String) in
               let cell = TableViewCell()
@@ -90,6 +97,20 @@ class Task3: UIViewController {
         .disposed(by: disposeBag)
     }
 
+    func configSearchField() {
+        searchField.placeholder = "Введите поисковой запрос"
+        
+        searchField
+            .rx
+            .text
+            .orEmpty
+            .throttle(RxTimeInterval.seconds(2), scheduler: MainScheduler.instance)
+            .subscribe(onNext: { query in
+                print("Поиск запроса: \(query)")
+                self.namesForShow.accept( self.names.value.filter { $0.hasPrefix(query) } )
+            } )
+            .disposed(by: disposeBag)
+    }
     
 // MARK: - ViewDidLoad
     override func viewDidLoad() {
@@ -99,7 +120,7 @@ class Task3: UIViewController {
     
 // MARK: Update сonstraints
     func updateConstraints() {
-        for v in [table, addButton, delButton] {
+        for v in [table, addButton, delButton, searchField] {
             view.addSubview(v)
             v.translatesAutoresizingMaskIntoConstraints = false
         }
@@ -113,7 +134,12 @@ class Task3: UIViewController {
             delButton.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor),
             delButton.leadingAnchor.constraint(equalTo: safeArea.centerXAnchor, constant: padding),
             
-            table.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: padding),
+            searchField.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: padding),
+            searchField.heightAnchor.constraint(equalToConstant: objHeight),
+            searchField.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: padding),
+            searchField.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -padding),
+            
+            table.topAnchor.constraint(equalTo: searchField.bottomAnchor, constant: padding),
             table.bottomAnchor.constraint(equalTo: addButton.topAnchor, constant: -padding),
             table.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: padding),
             table.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -padding),
