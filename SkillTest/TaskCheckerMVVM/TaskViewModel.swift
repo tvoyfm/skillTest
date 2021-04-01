@@ -6,13 +6,21 @@
 //
 
 import Foundation
-import UIKit
 
-class TaskViewModel {
+protocol TaskViewModelProtocol {
+    var storage: TaskStorage { get }
+    
+    func deleteTask(_ task: Task)
+    func addTask(_ title: String)
+    func allTasks() -> [Task]
+    func allTasksCount() -> Int
+}
+
+class TaskViewModel: TaskViewModelProtocol {
 // MARK: - Parameters
     let firstAlertTitle:                String = "Привет!"
     let firstAlertMessage:              String = """
-                                                 Для добавления задачи используй кнопку внизу экран
+                                                 Для добавления задачи используй кнопку внизу экрана
                                                  
                                                  Индикатор справа от текста задачи обозначает её статус, нажми чтобы поменять
                                                  
@@ -34,46 +42,18 @@ class TaskViewModel {
     let cellIdentifier:                 String = "TaskTableViewCell"
 
 // MARK: - Objects
-    let view = TaskView()
     let storage = TaskStorage.storage
-    
-// MARK: - Support table func
-    func reloadTable() {
-        view.table.reloadData()
-    }
-    
-    func registerCellForTable(cellClass: AnyClass?, identifier: String) {
-        view.table.register(cellClass, forCellReuseIdentifier: identifier)
-    }
-    
-    func setDataSourceTable(source: UITableViewDataSource) {
-        view.table.dataSource = source
-    }
-    
-    func setDelegateTable(source: UITableViewDelegate) {
-        view.table.delegate = source
-    }
-    
-    func setClearBackground() {
-        view.table.backgroundColor = .clear
-        view.table.separatorStyle = .none
-        view.table.separatorColor = .clear
-    }
-    
-    func setTargetButton(target: Any, selector: Selector) {
-        view.addBtn.addTarget(target, action: selector, for: .touchUpInside)
-    }
-    
+}
+
+extension TaskViewModelProtocol {
 // MARK: - Work with storage
     func deleteTask(_ task: Task) {
         storage.deleteTask(task)
-        reloadTable()
     }
     
     func addTask(_ title: String) {
         let task = Task(title)
         storage.addTask(task)
-        reloadTable()
     }
     
     func allTasks() -> [Task] {
@@ -83,5 +63,4 @@ class TaskViewModel {
     func allTasksCount() -> Int {
         return storage.allTasks().count
     }
-    
 }

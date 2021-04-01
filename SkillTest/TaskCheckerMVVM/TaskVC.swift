@@ -14,17 +14,18 @@ class TaskVC: UIViewController {
 
 // MARK: - Objects
     let model = TaskViewModel()
+    let taskView = TaskView()
     
 // MARK: - Config
     func configView() {
         func configTable() {
-            model.setClearBackground()
-            model.setDataSourceTable(source: self)
-            model.registerCellForTable(cellClass: TaskTableViewCell.self, identifier: model.cellIdentifier)
+            taskView.setClearBackground()
+            taskView.setDataSourceTable(source: self)
+            taskView.registerCellForTable(cellClass: TaskTableViewCell.self, identifier: model.cellIdentifier)
         }
 
         func configButton() {
-            model.setTargetButton(target: self, selector: #selector(addTask))
+            taskView.setTargetButton(target: self, selector: #selector(addTask))
         }
 
         // Call all methods
@@ -37,14 +38,14 @@ class TaskVC: UIViewController {
         let safeArea = view.safeAreaLayoutGuide
         
         func setupTaskView() {
-            view.addSubview(model.view)
-            model.view.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview(taskView)
+            taskView.translatesAutoresizingMaskIntoConstraints = false
             
             let constraints = [
-                model.view.topAnchor.constraint(equalTo: safeArea.topAnchor),
-                model.view.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor),
-                model.view.leftAnchor.constraint(equalTo: safeArea.leftAnchor, constant: LRpadding),
-                model.view.rightAnchor.constraint(equalTo: safeArea.rightAnchor, constant: -LRpadding)
+                taskView.topAnchor.constraint(equalTo: safeArea.topAnchor),
+                taskView.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor),
+                taskView.leftAnchor.constraint(equalTo: safeArea.leftAnchor, constant: LRpadding),
+                taskView .rightAnchor.constraint(equalTo: safeArea.rightAnchor, constant: -LRpadding)
             ]
             NSLayoutConstraint.activate(constraints)
 
@@ -79,6 +80,7 @@ class TaskVC: UIViewController {
             let textField = alert?.textFields![0]
             if textField?.text != "" {
                 self.model.addTask(textField!.text!)
+                self.taskView.reloadTable()
             }
         }))
         present(alert, animated: true)
@@ -105,12 +107,13 @@ extension TaskVC: UITableViewDataSource {
                                                       style: .destructive,
                                                       handler: { action in
                                                         self.model.deleteTask(cell.currentTask!)
+                                                        self.taskView.reloadTable()
                         }))
                     self.present(alert, animated: true)
             }
         
             cell.layer.backgroundColor = UIColor.clear.cgColor
-            cell.cellDelegate = model.view
+            cell.cellDelegate = taskView
         
         return cell
     }
@@ -125,6 +128,7 @@ extension TaskVC {
     func presentStartPopUp() {
         DispatchQueue.main.async {
             self.model.addTask(self.model.firstTaskTitle)
+            self.taskView.reloadTable()
             
             let alert = UIAlertController(
                 title: self.model.firstAlertTitle,

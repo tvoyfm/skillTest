@@ -71,6 +71,29 @@ class TaskView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+// MARK: - Support table func
+    func reloadTable() {
+        table.reloadData()
+    }
+    
+    func registerCellForTable(cellClass: AnyClass?, identifier: String) {
+        table.register(cellClass, forCellReuseIdentifier: identifier)
+    }
+    
+    func setDataSourceTable(source: UITableViewDataSource) {
+        table.dataSource = source
+    }
+    
+    func setClearBackground() {
+        table.backgroundColor = .clear
+        table.separatorStyle = .none
+        table.separatorColor = .clear
+    }
+    
+    func setTargetButton(target: Any, selector: Selector) {
+        addBtn.addTarget(target, action: selector, for: .touchUpInside)
+    }
+    
 }
 
 // MARK: - TaskTableViewCellProtocol
