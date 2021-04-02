@@ -7,17 +7,35 @@
 
 import Foundation
 
+// MARK: - Protocol for model
 protocol TaskViewModelProtocol {
     var storage: TaskStorage { get }
+    var cellIdentifier:                 String { get }
     
     func deleteTask(_ task: Task)
     func addTask(_ title: String)
     func allTasks() -> [Task]
     func allTasksCount() -> Int
+    
+    // Text for alerts
+    var firstAlertTitle:                String { get }
+    var firstAlertMessage:              String { get }
+    var firstAlertActionTitle:          String { get }
+    var firstTaskTitle:                 String { get }
+    
+    var addTaskAlertTitle:              String { get }
+    var addTaskAlertMessage:            String { get }
+    var addTaskAlertAddActionTitle:     String { get }
+    var addTaskAlertCloseActionTitle:   String { get }
+    
+    var deleteAlertTitle:               String { get }
+    var deleteAlertMessage:             String { get }
+    var deleteAlertActionTitle:         String { get }
+    var deleteAlertCloseActionTitle:    String { get }
 }
 
+// MARK: - Default model
 class TaskViewModel: TaskViewModelProtocol {
-// MARK: - Parameters
     let firstAlertTitle:                String = "Привет!"
     let firstAlertMessage:              String = """
                                                  Для добавления задачи используй кнопку внизу экрана
@@ -41,12 +59,11 @@ class TaskViewModel: TaskViewModelProtocol {
     
     let cellIdentifier:                 String = "TaskTableViewCell"
 
-// MARK: - Objects
     let storage = TaskStorage.storage
 }
 
 extension TaskViewModelProtocol {
-// MARK: - Work with storage
+// MARK: - Default work with storage
     func deleteTask(_ task: Task) {
         storage.deleteTask(task)
     }

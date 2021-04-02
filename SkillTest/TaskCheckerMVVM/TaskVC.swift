@@ -13,7 +13,7 @@ class TaskVC: UIViewController {
     let LRpadding: CGFloat = 16.0
 
 // MARK: - Objects
-    let model = TaskViewModel()
+    let model: TaskViewModelProtocol = TaskViewModel()
     let taskView = TaskView()
     
 // MARK: - Config
